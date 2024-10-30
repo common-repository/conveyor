@@ -1,0 +1,155 @@
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+.conveyor_link_chooser {
+	
+	padding: 0 120px 0 0;
+
+	#conveyor_link_value {
+		width: 100%;
+		float: left;
+	}
+
+	.conveyor_link_btn {
+		margin: 0 -110px 0 0;
+		float: right;
+	}
+
+	#conveyor_open_new_window_value
+	{
+		margin-left: 1px;
+	}
+}
+
+.conveyor_options table {
+	
+	span.inline
+	{
+		display: inline-block;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+}
+
+#conveyor_featured, .conveyor_featured {
+
+	.label-inline {
+		width:100px;
+		display: inline;
+	}
+
+	.disabled {
+		background-color: #eee;
+	}
+
+	hr { 
+		margin-top: -6px;
+		border-top: 1px solid #eee;
+		border-bottom: none;
+	}
+
+	.muted {
+		color: #aaa;
+	}
+
+	.row {
+
+		padding: 0 0 0 140px;
+
+		.label__container{
+			margin: 0 0 0 -140px;
+			float: left;
+		}
+
+		.input__container {
+
+			width:100%;
+			float: right;
+
+			textarea,
+			input:not([type='checkbox']):not([type='radio']) {
+				width:100%;
+			}
+		}
+
+		.input__wrapper {
+			
+			padding: 0 0 0 28px;
+			display: block;
+
+			.help-inline {
+				background-color: #eee;
+				border: 1px solid #ddd;
+				padding: 4px 9px 3px 9px;
+				margin: 1px 0 0 -27px;
+				float:left;
+
+				&.at {
+					padding: 4px 6px 3px 7px;
+				}
+
+				&.hash {
+					padding: 4px 8px 3px 9px;
+				}
+			}
+
+			input:not([type='checkbox']) {
+				float:right;
+			}
+		}
+
+		.input__wrapper.right {
+			
+			padding: 0 29px 0 0;
+			display: block;
+
+			.help-inline {
+				background-color: #eee;
+				border: 1px solid #ddd;
+				padding: 4px 8px 3px 7px;
+				margin: 1px -29px 0 0;
+				float:left;
+			}
+
+			input {
+				float:left;
+				margin-right:-1px;
+			}
+
+			&.px {
+				padding: 0 32px 0 0;
+
+				.help-inline {
+					padding: 4px 7px 3px 7px;
+					margin: 1px -32px 0 0;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+		.help-inline {
+			padding-top:9px !important;
+			padding-bottom:7px !important;
+		}
+
+		.row {
+
+			padding: 0 0 0 140px;
+
+			.label__container{
+				margin: 0 0 0 -140px;
+				float: left;
+			}
+		}
+	}
+}
